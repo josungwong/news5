@@ -1,0 +1,160 @@
+.head-line{
+    margin-top:2.5em ;
+    display: flex;
+    justify-content: center;
+}
+.head-line svg{
+    width: 430px;
+}
+.menus{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 4px double black;
+}
+.menus button{
+    border: none;
+    background: none;
+    margin: 5px;
+    transition: 0.3s;
+}
+.menus button:hover{
+    background-color: black;
+    color: yellow;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.col-lg-4{
+    display: flex;
+    justify-content: center;
+}
+.news-img-size{
+    max-width: 100%;
+    max-height: 250px;
+}
+.news{
+    border-bottom: 2px solid black;
+    margin-top: 1em;
+}
+.search{
+    position: absolute;
+    display: inline;
+    top: 2vh;
+    left: 20vw;
+    float: left;
+}
+#search-input{
+    border-radius: 10px 0 0 10px ;
+    box-shadow: 1px 2px 5px;
+    transition: 0.3s;
+    width: 8vw;
+    margin-right: 0.2em;
+    float: left;
+}
+#search-input:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.gumButton{
+    border-radius: 0 10px 10px 0 ;
+    box-shadow: 1px 2px 5px;
+    transition: 0.3s;
+    float: left;
+}
+.gumButton:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.searchButton{
+    border: none;
+    width: 2.1em;
+    height: 2.1em;
+    float: left;
+}
+.searchButton:hover{
+    border: 2px dotted black;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.searchButton img{
+    transform: scale(0.5) translate(-78%,-50%);
+    transition: 0.3s;
+}
+#submenuBar{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 40vw;
+    background-color: rgb(134, 186, 207);
+    z-index: 1;
+    transition: 0.3s;
+}
+#submenuButton{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5vh 20vw ;
+    transition: 0.3s;
+}
+#submenuBar #X{
+    position: relative;
+    top: 2.5%;
+    left: 70%;
+    transition: 0.3s;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(134, 186, 207);
+    font-size: 38px;
+
+}
+#submenuButton button{
+    margin: 2vh;
+    border: none;
+    background-color: rgb(134, 186, 207);
+    transition: 0.5s;
+    font-size: 20px;
+}
+#submenuButton button:hover, #submenuButton button:active{
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: rgb(186, 218, 6);
+}
+
+@media screen and (max-width:62rem) {
+    .search{
+        left: 23vw;
+    }
+    #search-input{
+        width: 145px;
+        border-radius: 10px;
+    }
+    .gumButton{
+        width: 50px;
+        position: absolute;
+        top: -100em;
+    }
+    .head-line{
+        
+        margin-top: 4em;
+    }
+    .menus{
+        margin-top: 2.2em;
+    }
+    .menus button{
+        display: none;
+    }
+    .under-line{
+        position: absolute;
+        top: 2vh;
+        left: 7vw;
+    }
+    .under-line div{
+        border-bottom: 5px solid black;
+        border-radius: 30%;
+        width: 30px;
+        margin-top: 4px;
+    }
+}
